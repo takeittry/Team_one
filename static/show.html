@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <link rel="stylesheet" href="css/myUi.css">
+    <link rel="stylesheet" href="css/footer.css"/>
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+    <title>Document</title>
+</head>
+<body>
+<header id="header"></header>
+<div>
+        <!--头部轮播-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/59fff434c4657.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/59f98ac3aa8dc.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/59fab1d181cff.jpg" alt=""></div>
+            </div>
+            <!-- 如果需要导航按钮 -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <!-- 如果需要滚动条 -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <!--标签页效果实现内容切换-->
+        <div id="my-tabs">
+            <ul>
+              <li><a data-toggle="tab" href="#content1" data-target="content1">企业展示</a></li>
+              <li><a data-toggle="tab" href="#content2" data-target="content2">教育领域</a></li>
+              <li><a data-toggle="tab" href="#content3" data-target="content3" onclick="typing()">直播</a></li>
+            </ul>
+            <div>
+            <div id="content1" class="active">
+                <!--企业展示-->
+                <div class="applycol fade">
+                    <div class="title_h1">企业展示</div>
+                    <div class="h5info">
+                        <p>VR技术带来的沉浸式营销带来前所未有的全景感知、</p>
+                        <p>交互体验会给消费者留下深刻的印象。</p>
+                        <p>VR技术能够帮助企业立体展示产品、宣传品牌，展现企业整体形象</p>
+                    </div>
+                    <div class="conmain">
+                        <img src="img/exhibition_col_a_img.png" alt="">
+                    </div>
+                </div>
+                <!--产品展示-->
+                <div class="title_h1">产品展示</div>
+                     <div class="h5info fade">
+                        <p>VR针对工业机械、家具、电器行业等</p>
+                        <p>有进行产品推介、产品操作演示说明、复杂结构展示等需求的商家</p>
+                    </div>
+                    <div class="conmain img_fade">
+                            <img src="img/applycol_product_img.png" alt="">
+                    </div>
+                   <!--全景展示-->
+                   <div class="title_h1">全景展示</div>
+                   <div class="h5info .img_fade" id="text2">
+                       <p>针对全行业</p>
+                       <p>通过全景实拍或者建模的方式全角度展示一个空间、地点，</p>
+                       <p>辅以语音、图文、视频等多媒体内容承载信息，借助PC端、移动端实现营销推广裂变。</p>
+                   </div>
+                   <div class="colgroup fade" id="text3">
+                       <ul class="clearboth">
+                           <li><div>360°立体直观的方式展示环境、空间创造人与企业之间的互动体验</div></li>
+                           <li><div>将制作好的作品生成二维码进行微信裂变传播</div></li>
+                           <li><div>建模的方式开启虚拟店铺崭新时代无需空间和装修，节约成本</div></li>
+                           <li><div>图文介绍、语音播报、内嵌视频等充分展示企业形象和实力，塑造更加立体的企业形象</div></li>
+                       </ul>
+                   </div>
+                   <div class="conmain">
+                       <img src="img/applycol_panorama_img.png">
+                   </div>
+
+            </div>
+            <div id="content2" style="overflow:hidden">
+                <div class="applycol ">
+                    <div class="title_h1">VR+教育</div>
+                    <div class="title_border"></div>
+                    <div class="text_h2 text2_fade">
+                        <p>VR虚拟现实重在强调学生在学习过程中的参与性</p>
+                        <p>让学生亲身体验，主动思考，积极学习</p>
+                    </div>
+                    <div class="text_h6 text3_fade">
+                        <p>应用VR虚拟现实的硬件设备与软件环境可以帮助老师更容易的授业解惑；</p>
+                        <p>进行全真模拟展示和交互，增加教学的实际性和真实性，满足师生对立展示和实践性的需求</p>
+                    </div>
+                    <div class="conmain img2_fade">
+                        <div style="margin-top:100px">
+                            <img src="img/apply_educate_homr_img.png">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="content3" >
+                 <div class="title_h1">VR直播</div>
+                 <div class="h5info">
+                </div>
+
+                <div class="colhd">
+                    <div class="title_h1">
+                        VR直播平台的六大直播版块
+                    </div>
+                </div>
+        <div class="colgroup">
+            <ul>
+                    <li class="li_top_fade"><div><em><img src="img/apply_play_b_ico_1.png"></em>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p>直播会展</p></div></li>
+                    <li><div><em><img src="img/apply_play_b_ico_2.png"></em>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p>在线展会</p></div></li>
+                    <li><div><em><img src="img/apply_play_b_ico_3.png"></em>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p>企业VR直播间</p></div></li>
+                    <li><div><em><img src="img/apply_play_b_ico_4.png"></em>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p>vr直播推流服务</p></div></li>
+                    <li><div><em><img src="img/apply_play_b_ico_5.png"></em>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p>展示数据分析服务</p></div></li>
+                    <li><div><em><img src="img/apply_play_b_ico_6.png"></em>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<p>VR直播培训</p>
+                </div></li>
+            </ul>
+        </div>
+        <div class="conmain img3_fade">
+                <div>
+                    <img src="img/apply_play_b_img.png">
+                </div>
+            </div>
+
+            </div>
+            </div>
+
+        </div>
+</div>
+<footer id="footer">
+    <div id="contain">
+        <div class="row">
+            <div class="col-lg-9 md-hide">
+                <div class="d-left nav">
+                    <div>
+                        <ul>
+                            <li class="title"><a href="">首页</a></li>
+                            <li><a href="">VR应用领域</a></li>
+                            <li><a href="">EIHOO产品</a></li>
+                            <li><a href="">实践项目</a></li>
+                            <li><a href="">关于EIHOO</a></li>
+                            <li><a href="">加入我们</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul></div>
+                    <div>
+                        <ul>
+                            <li class="title"><a href="">VR应用领域</a></li>
+                            <li><a href="">企业展示</a></li>
+                            <li><a href="">教育领域</a></li>
+                            <li><a href="">直播</a></li>
+                        </ul></div>
+                    <div>
+                        <ul>
+                            <li class="title"><a href="">EIHOO产品</a></li>
+                            <li><a href="">E虎展示</a></li>
+                            <li><a href="">E虎教育</a></li>
+                            <li><a href="">E虎直播</a></li>
+                        </ul></div>
+                    <div>
+                        <ul>
+                            <li class="title"><a href="">实践项目</a></li>
+                            <li><a href="">ABB展会直播案例</a></li>
+                            <li><a href="">奥克斯930破壁料理机案例</a></li>
+                            <li><a href="">ABB SAFE MOVE2</a></li>
+                            <li><a href="">宝马I8展示案例</a></li>
+                            <li><a href="">上海普陀区旅游宣传片</a></li>
+                        </ul></div>
+                    <div>
+                        <ul>
+                            <li class="title"><a href="">关于EIHOO</a></li>
+                            <li><a href="">企业简介</a></li>
+                            <li><a href="">资质和荣誉</a></li>
+                            <li><a href="">实践项目</a></li>
+                            <li><a href="">企业动态</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul></div>
+                    <div>
+                        <ul>
+                            <li class="title"><a href="">加入我们</a></li>
+                            <li><a href="">企业文化</a></li>
+                            <li><a href="">联系我们</a></li>
+                        </ul></div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-right pl-5 mt-5 mb-4 md-hide">
+                <h5>联系我们</h5>
+                <div><img src="img/weibo.png"/> <img src="img/weixin.png"/></div>
+                <div>
+                    <p><img src="img/address.png"/><span>上海市 普陀区 中江路888号</span></p>
+
+                    <p><img src="img/phone.png"/><span>021-61671334</span></p>
+
+                    <p><img src="img/e-mail.png"/><span>eihoo@eihoo.com</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row md-show md-nav ">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">VR应用领域</a></li>
+            <li><a href="">EIHOO产品</a></li>
+            <li><a href="">实践项目</a></li>
+            <li><a href="">关于EIHOO</a></li>
+            <li><a href="">组员风采</a></li>
+        </ul>
+    </div>
+    <div class="row md-show md-msg">
+        <div>
+            <p><img src="img/address.png"/><span>上海市 普陀区 中江路888号</span></p>
+
+            <p><img src="img/phone.png"/><span>021-61671334</span></p>
+
+            <p><img src="img/e-mail.png"/><span>eihoo@eihoo.com</span></p>
+        </div>
+    </div>
+    <div class="row md-show">
+        上海爱护网信息科技发展股份有限公司 版权所有 沪ICP备13027197号
+    </div>
+</footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script>
+    /*打字机效果*/
+    var str=`<p>如果您是承接大型会议/展览的会展公司，您希望为客户呈现一场与众不同的会务直播；<br>图文并茂早已过时，即使是绘声绘色视频也无法为观看者带来实时动态体验竞技带来的兴奋感缺乏真实感和融入感<br> 或者您是一家希望在会议现场进行品牌传播、企业形象展示的企业，<br>这时您需要具有沉浸感的VR直播帮您达到震撼、刺激、惊心动魄的LIVE视听感效果</p>`;
+    var i = 0;
+    function typing(){
+        var divTyping = document.querySelector("#content3>.h5info");
+        if (i <= str.length) {
+            divTyping.innerHTML = str.slice(0, i++) + '_';
+            setTimeout('typing()',100);//递归调用
+        }
+        else{
+            divTyping.innerHTML = str;//结束打字,移除 _ 光标
+        }
+    }
+   
+</script>
+<script>
+    var foot=$("#footer")
+    foot.css("width","100%")
+    foot.css("position","absolute")
+    foot.css("top","3000px")
+    $("#my-tabs").on("click","[data-toggle=tab]",(e)=>{
+         e.preventDefault();
+         var $this=$(e.target);
+         var id=$this.attr("data-target");
+         $("#id").addClass("active").siblings().removeClass("active");
+          if(id=="content1"){
+              foot.css("top","3000px")
+          }else{
+              foot.css("top","2000px")
+          }
+    })
+</script>
+<script src="js/myJq.js"></script>
+<script>
+    $("#my-tabs").tabs();
+</script>
+<script>
+    var mySwiper = new Swiper ('.swiper-container', {
+        speed:2000,
+        loop: true, // 循环模式选项
+        autoplay:true,
+        // 如果需要前进后退按
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar'
+        }
+    })
+</script>
+<script>
+    var d=0;//创建变量d监听鼠标滚轮事件
+  window.onscroll=function(){
+      //获得鼠标位置相对于网页顶部距离
+    var t = document.documentElement.scrollTop||document.body.scrollTop;
+    if(d==0){
+        var text=document.querySelector("#content1>.applycol");
+        if(t>100){
+            text.setAttribute("class","applycol fade in");
+        }else if(t<100){
+            text.setAttribute("class","applycol fade ");
+        }
+        var text1=document.querySelector("#content1>.h5info");
+        if(t>1100){
+            text1.setAttribute("class","h5info fade in");
+        }else if(t<1100){
+            text1.setAttribute("class","h5info fade ");
+        }
+        var img=document.querySelector("#content1>.conmain");
+        if(t>1200){
+            img.setAttribute("class","conmain img_fade img_in")
+        }else if(t<1200){
+            img.setAttribute("class","conmain img_fade")
+        }
+        var text2=document.getElementById("text2")
+        if(t>1400){
+            text2.setAttribute("class","h5info text2_fade text2_in");
+        }else if(t<1400){
+            text2.setAttribute("class","h5info text2_fade");
+        }
+        var text3=document.getElementById("text3");
+        if(t>1700){
+            text3.setAttribute("class","colgroup fade in");
+        }else if(t<1700){
+            text3.setAttribute("class","colgroup fade");
+        }
+        var text4=document.querySelector("#content2>.applycol>.text_h2");
+        if (t>100){
+            text4.setAttribute("class","text_h2 text2_fade text2_in");
+        }
+        if(t<100){
+            text4.setAttribute("class","text_h2 text2_fade");
+        }
+        var text5=document.querySelector("#content2>.applycol>.text_h6");
+        if(t>500){
+            text5.setAttribute("class","text_h6 text3_fade text3_in");
+        }if(t<500){
+            text5.setAttribute("class","text_h6 text3_fade");
+        }
+        var img2=document.querySelector("#content2>.applycol>.conmain");
+        if(t>900){
+            img2.setAttribute("class","conmain img2_fade img2_in");
+        }if(t<900){
+            img2.setAttribute("class","conmain img2_fade");
+        }
+        var li1=document.querySelector("#content3>.colgroup>ul li:nth-child(1)");
+        if(t>500){
+            li1.setAttribute("class","li_top_fade li_top_in");
+        }if(t<500){
+            li1.setAttribute("class","li_top_fade");
+        }
+        var li2=document.querySelector("#content3>.colgroup>ul li:nth-child(2)");
+        if(t>500){
+            li2.setAttribute("class","li_bottom_fade li_bottom_in");
+        }if(t<500){
+            li2.setAttribute("class","li_bottom_fade");
+        }
+        var li3=document.querySelector("#content3>.colgroup>ul li:nth-child(3)");
+        if(t>500){
+            li3.setAttribute("class","li_top_fade li_top_in");
+        }if(t<500){
+            li3.setAttribute("class","li_top_fade");
+        }
+        var li4=document.querySelector("#content3>.colgroup>ul li:nth-child(4)");
+        if(t>500){
+            li4.setAttribute("class","li_bottom_fade li_bottom_in");
+        }if(t<500){
+            li4.setAttribute("class","li_bottom_fade");
+        }
+        var li5=document.querySelector("#content3>.colgroup>ul li:nth-child(5)");
+        if(t>500){
+            li5.setAttribute("class","li_top_fade li_top_in");
+        }if(t<500){
+            li5.setAttribute("class","li_top_fade");
+        }
+        var li6=document.querySelector("#content3>.colgroup>ul li:nth-child(6)");
+        if(t>500){
+            li6.setAttribute("class","li_bottom_fade li_bottom_in");
+        }if(t<500){
+            li6.setAttribute("class","li_bottom_fade");
+        }
+        var img3=document.querySelector("#content3>.conmain");
+        if(t>800){
+            img3.setAttribute("class","conmain img3_fade img3_in");
+        }if(t<800){
+            img3.setAttribute("class","conmain img3_fade");
+        }
+    }
+  }
+</script>
+</body>
+</html>

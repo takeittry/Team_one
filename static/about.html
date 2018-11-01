@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/about.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u70A5pnNrRtRT1XAgwM5jL2YIVj1Gv97">
+    //v2.0版本的引用方式：src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"
+    </script>
+</head>
+<body>
+<header id="header"></header>
+    <a href="#" class="scroll" id="scroll" style="display:block">
+        <em class="iconfont icon-xiangshang2"></em>
+    </a>
+    <!--视频播放-->
+<div class="video">
+    <video class="hmthree_video video background_video" id="v3" src="res/x.mp4"  autoplay muted loop></video>
+</div>
+    <!--公司介绍-->
+    <div class="aboutframe  clearfix whitebg" id="about_introduction">
+        <div class="locationbox max_widithbox">
+            <div class="about_about clearboth">
+                <div class="location_logo">
+                    <img src="img/59f995a773bb8.jpg" alt="">
+                </div>
+                <div class="locationfont fontone">
+                    <p>
+                        <span style="font-size: 16px;">
+                            <span style="font-family: arial, helvetica, sans-serif;">上海爱护网信息科技发展股份有限公司，是一家将</span>
+                            <span style="font-family: arial, helvetica, sans-serif; color: rgb(192, 0, 0); font-weight: bold;">VR、AR、AI人工智能、互动新媒体等高新科技用于教育和展示领域，</span>
+                            <span style="font-family: arial, helvetica, sans-serif;">提供全套系统解决方案和项目实施的新三板公众公司（证券代码：871761），同时也是双软、高新科技企业，并且通过ISO9001。拥有自主研发的26项软件著作权。</span>
+                        </span>
+                    </p>
+                    <p style="line-height: 150%;margin-top: 0;margin-bottom: 0;margin-left: 0in;direction: ltr;unicode-bidi: embed">
+                        <span style="font-family: arial, helvetica, sans-serif; font-size: 16px;">
+                                公司的技术人员的专业领域涉及：
+                                <span style="font-size: 16px; font-family: arial, helvetica, sans-serif; color: rgb(192, 0, 0); font-weight: bold;">
+                                        软硬件开发、交互集成设计、多媒体设计、VR\AR\MR设计、云平台开发及服务等多个领域。
+                                </span>
+                                员工大学学历者占96%，研究生学历占15%，主要技术人员多位毕业于清华、北大、交大、同济等著名院校。
+                        </span>
+                    </p>
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--董事长寄语-->
+    <div class="aboutframe ashbg">
+        <div class="aboutmessbox max_widithbox  about_culture accordion">
+            <div class="about_cult_col">
+                <div class="about_cult_colhd title"><a href="javascript:;">企业使命</a></div>
+                <div class="about_cult_main content">
+                   <h3>“润”——是一种对用户对员工的体贴，是亲切的爱和保护；</h3><br>
+                    <h3>“载”——是我们肩负的责任，是付出的努力，是博大兼容的胸怀；</h3><br>
+                    <h3>“厚德”——用“厚德”规范我们的品行。</h3><br><br>
+                    <h3>我们的创造、我们的付出，将如天地间的细雨惠泽万物，这是我们的理想。</h3><br>  
+                    <h3>爱护网是一家专注于VR技术研究并提供VR全套系统解决方案的双软及高新科技企业，<br>我们将致力于成为VR+教育+展示的领航者。</h3>
+                    <p><img src="img/59fc0ae8528a6.jpg" alt=""></p>               
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+        $(".accordion>.content:gt(0)").hide();
+		$(".accordion").on("click",".title",function(){
+			var $title=$(this);
+			$title.next() //当前content
+						.slideToggle() //切换: 如果现在是隐藏，就换为显示，如果现在是显示，就换为隐藏
+						.siblings(".content") //其它content
+						.slideUp()
+		})
+	</script>
+    <!--荣誉资料-->
+    <div class="aboutframe whitebg">
+        <div class="locationbox max_widithbox missionbox accord">
+            <a class=" title" href="javascript:;"><p class="locationtle fontcen about_h2title">荣誉和资质</p></a>
+            <div class="about_honor content">
+                <p class="tinti_con">同时也是双软企业和高新企业</p>
+                <ul class="col_group clearboth">
+                    <li class="col_item">
+                        <div class="main">
+                            <i><img src="img/59f995d44675b.png" alt=""></i>
+                            <p>2项作品著作权</p>
+                        </div>
+                    </li>
+                    <li class="col_item">
+                        <div class="main">
+                            <i><img src="img/59f995cf23f6d.png" alt=""></i>
+                            <p>3项商标</p>
+                        </div>
+                     </li>
+                    <li class="col_item">
+                        <div class="main">
+                            <i><img src="img/59f995c564480.png" alt=""></i>
+                            <p>2项专利</p>
+                        </div>
+                    </li>
+                   <li class="col_item">
+                        <div class="main">
+                            <i><img src="img/59f995bbc9f44.png" alt=""></i>
+                            <p>26项软件著作权</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".accord>.content:gt(0)").hide();
+        $(".accord").on("click",".title",function(){
+            var $title=$(this);
+            $title.next() //当前content
+                        .slideToggle() //切换: 如果现在是隐藏，就换为显示，如果现在是显示，就换为隐藏
+                        .siblings(".content") //其它content
+                        .slideUp()
+        })
+    </script>
+    <!--企业动态-->
+    <div class="aboutframe clearfix ashbg">
+        <div class="locationbox max_widithbox missionbox accordio">
+            <a class=" title" href="javascript:;"><p class="locationtle fontcen about_h2title">企业动态</p></a>
+            <div class="about_newsbox content">
+                <ul class="about_newslsbox clearfix">
+                    <li>
+                        <a href="javascript:;" class="about_newsls clearboth">
+                            <font>2018年06月13日</font>
+                            <span>爱护网科技在VR+教育、VR+医疗领域持续发力</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="about_newsls clearboth">
+                            <font>2017年12月01日</font>
+                            <span>E虎VR将参加第十届中国会议产业大会</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="about_newsls clearboth">
+                            <font>2017年12月01日</font>
+                            <span>第十九届工博会今日开幕，集体为VR展示打CALL</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="about_newsls clearboth">
+                            <font>2017年11月01日</font>
+                            <span>爱护网科技将参加第十九届国际工业博览会</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="about_newsls clearboth">
+                            <font>2017年08月18日</font>
+                            <span>上海爱护网信息科技发展股份有限公司正式登陆新三板</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".accordio>.content:gt(0)").hide();
+        $(".accordio").on("click",".title",function(){
+            var $title=$(this);
+            $title.next() //当前content
+                        .slideToggle() //切换: 如果现在是隐藏，就换为显示，如果现在是显示，就换为隐藏
+                        .siblings(".content") //其它content
+                        .slideUp()
+        })
+    </script>
+    <!--联系我们-->
+    <div class="aboutframe whitebg">
+        <div class="locationbox max_widithbox missionbox">
+            <p class="locationtle fontcen about_h2title">联系我们</p>
+            <span></span>
+            <div class="clearfix">
+                <div class="accor">
+                        <div class="title"><h4>上海爱护网信息科技发展股份有限公司</h4></div>
+                        <div class="content ashfonttwo"><h4>&nbsp;&nbsp;联系地址：上海市 普陀区 中江路888号</h4></div>
+                        <div class="title"><h4>联系方式</h4></div>
+                        <div class="content">
+                            <span class="ashfonttwo content">&nbsp;&nbsp;phone：<h4>&nbsp;&nbsp;021-61671334</h4></span>
+                            <span class="ashfonttwo">&nbsp;&nbsp;email：<h4>&nbsp;&nbsp;eihoo@eihoo.com</h4></span>
+                        </div>
+                </div>
+                <script>
+                    $(".accor").on("click",".title",function(){
+                        var $title=$(this);
+                        $title.next() //当前content
+                                    .slideToggle() //切换: 如果现在是隐藏，就换为显示，如果现在是显示，就换为隐藏
+                                    .siblings(".content") //其它content
+                    })
+                </script>
+                <div class="aboutcon_rimgbox right" id="container"></div>
+                        <script type="text/javascript"> 
+                        // 创建地图实例  
+                        var map = new BMap.Map("container");
+                        // 创建点坐标 
+                        var point = new BMap.Point(121.399103,31.240846);
+                        // 初始化地图，设置中心点坐标和地图级别   1-19
+                        map.centerAndZoom(point, 19);
+                        //导航控件
+                        map.addControl(new BMap.NavigationControl());
+                        //缩放控件
+                        map.addControl(new BMap.ScaleControl()); 
+                        //地图类型控件
+                        map.addControl(new BMap.MapTypeControl()); 
+                        //添加覆盖物
+                        var mk = new BMap.Marker(point);
+                        mk.setAnimation(BMAP_ANIMATION_BOUNCE);
+                        map.addOverlay(mk);
+                        </script>  
+            </div>
+        </div>
+    </div>
+<footer id="footer"></footer>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/header.js"></script>
+<script src="js/footer.js"></script>
+</body>
+</html>

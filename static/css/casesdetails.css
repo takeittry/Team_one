@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color:#F3F1F1;
+}
+body div.container{
+    max-width:1200px;
+    background-color:#fff;
+    padding:0;
+}
+/*body .container div.second-content{
+    padding-left: 30px;
+}*/
+.container>div:first-child{
+    color: #555;
+    padding: 15px 0;
+    text-indent: 50px;
+}
+.container>div:nth-child(2){
+    width:100%;
+    border-bottom:1px solid #eee;
+}
+.container>div:nth-child(3){
+    font-size: 2.2em;
+    text-align: center;
+    letter-spacing: 15px;
+    color: #e61e3d;
+    padding:30px 0;
+}
+/*轮播*/
+.container>div.lunbo{
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    margin: 100px auto;
+    perspective: 1800px;
+    position: relative;
+}
+.container>div.lunbo #lunbo-img img{
+    vertical-align: middle;
+    width:350px;
+    height:300px;
+    border:1px solid #aaa;
+}
+.container>div.lunbo ul {
+    width: 350px;
+    height: 300px;
+    list-style: none;
+}
+.container>div.lunbo ul li {
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1.5s ease 0s;
+}
+.container>div.lunbo ul .left2 {
+    transform: rotateY(30deg) translateX(-380px) translateZ(-20px);
+    z-index: 7;
+}
+.container>div.lunbo ul .left1 {
+    transform: rotateY(40deg) translateX(-280px) translateZ(70px);
+    z-index: 8;
+}
+.container>div.lunbo ul .first{
+    z-index: 9;
+}
+.container>div.lunbo ul .right1 {
+    transform: rotateY(-40deg) translateX(280px) translateZ(-70px);
+    z-index: 8;
+}
+.container>div.lunbo ul .right2 {
+    transform: rotateY(-30deg) translateX(380px) translateZ(-70px);
+    z-index: 7;
+}
+.container>div.lunbo span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #737171;
+    z-index: 20;
+    position: absolute;
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin-top: -30px;
+}
+#pre {
+    top: 140px;
+    left: -380px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#next {
+    top: 140px;
+    right: -380px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/**/
+.container>div:nth-child(5){
+    font-size: 1.9em;
+    padding-top:30px;
+    padding-left: 50px;
+}
+.container>div:nth-child(6){
+    text-indent: 2em;
+    line-height: 2.5em;
+    padding:15px 50px;
+}
+.container .gongneng{
+    font-size: 1.9em;
+    padding:15px 50px;
+}
+.container #my-accordion{
+    margin-bottom: 30px;
+}
+/*********** accordion **************/
+.accordion{
+    width:90%;
+    /*margin:0 auto;*/
+    margin:0;
+}
+.accordion>.title{
+    width:100%;
+    background:#EFEFEF;
+    border:1px solid #eee;
+   /* padding:6px;*/
+    font-size:1.2em;
+    font-weight:bold;
+    cursor:pointer;
+    text-indent: 4em;
+}
+.accordion>.content{
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+}
+.accordion>.content img{
+    width:375px;
+    height:234px;
+    padding: 15px 0;
+}
+.accordion>:last-child{
+    border-bottom:1px solid #eee;
+}
+.accordion .fade{
+    height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:all .5s linear;
+    text-align: center;
+    font-size: 18px;
+}
+.accordion .in{
+    height:300px;
+    opacity:1;
+}
+/**/
+.tabs{ list-style:none; padding:0;}
+.tabs a{
+    text-decoration:none;
+    color:#000;
+    /*padding:6px 12px;*/
+    display:inline-block;
+    width:96px;
+    /*text-align:center;*/
+}
+.tabs>li{
+    float:left;
+    border-bottom:1px solid #000;
+}
+.tabs>.active{
+    border:1px solid #000;
+    border-bottom:0;
+}
+.inner{
+    position: relative;
+}
+.inner>div{
+    width: 100%;
+    /*height: 100px;
+    padding:30px;*/
+    background:#fff;
+    border:1px solid #000;
+    border-top:0;
+    position: absolute;
+    /*top: 34px;
+    left: 0;*/
+}
+.inner>.active{
+    z-index:5;
+}

@@ -1,0 +1,32 @@
+#my-tabs .tabs{ 
+  list-style:none; padding:0;
+}
+#my-tabs .tabs a{
+  text-decoration:none;
+	color:white;
+	padding:30px 5px 15px 5px;
+	display:inline-block;
+  width:96px;
+  text-align:center;
+}
+#my-tabs .tabs a:hover{
+  color: red;
+}
+
+#my-tabs .container{
+	position: relative;
+}
+#my-tabs .container>div{
+	width: 100%;
+    background:#fff;
+	position: absolute;
+	top: 34px;
+	left: 0;
+}
+#my-tabs .container>.active{
+  z-index:10;
+  display: block;
+}
+#footer{
+    width:100% !important;
+}
